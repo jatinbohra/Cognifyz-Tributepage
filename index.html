@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design and Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header1>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">NEWS</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header1>
+    <header>
+        <h1><img src="flag.png" width="55" height="50">India at the 2024 Summer Olympics<img src="flag.png" width="55" height="50"></h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Introducation</h2>
+            <p>India is competing at the 2024 Summer Olympics in Paris, France, 
+            being held between 26 July and 11 August 2024. The country made
+            its debut at the 1900 Summer Olympics. Indian athletes have appeared
+            at every edition of the Summer Olympic Games since 1920 and this edition 
+            of the Games marked the nation's 26th appearance at the Summer Olympics.</p>
+            <h2>Background</h2>
+            <p>The Indian contingent for this year's games consisted of 117 athletes: 
+            110 competitors and 7 alternate, in addition to 118 support staff and 
+            22 officials. Gagan Narang was appointed as the Chef de mission 
+            aka head of mission while Shiva Keshavan was chosen as his deputy. P.V. 
+            Sindhu and Sharath Kamal were the designated flag-bearers for the opening
+            ceremony. Manu Bhaker, who won two medals for India at this year's event,
+            has been appointed as the flag bearer for the closing ceremony. 
+            </p>
+            <h2>Medalists</h2>
+            <table style="text-align:center;">
+                
+                <tr>
+                    <th>Medal</th>
+                    <th>Name</th>
+                    <th>Sport</th>
+                    <th>Event</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>Manu Bhaker</td>
+                    <td>Shooting</td>
+                    <td>Women's 10 metre air pistol</td>
+                    <td>28 July</td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>Manu Bhaker,
+                        Sarabjot Singh</td>
+                    <td>Shooting</td>
+                    <td>Mixed 10 metre air pistol team</td>
+                    <td>30 July</td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>Swapnil Kusale</td>
+                    <td>Shooting</td>
+                    <td>Men's 50 metre rifle three positions</td>
+                    <td>1 August</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 All Rights Reserved | Power By Jatin Bohra</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        </script>
+</body>
+</html>

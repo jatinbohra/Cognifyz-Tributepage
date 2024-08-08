@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header1 {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none; /* Hide the burger menu initially */
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust this value as needed */
+        background-color: #333;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the navigation links when active */
+    }
+
+    .burger {
+        display: block; /* Show the burger menu icon */
+    }
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+    height: auto;
+}
+
+.content {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 10px 0;
+    height: auto;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Styles for screens smaller than 768px (e.g., phones) */
+@media (max-width: 767px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Styles for screens larger than 768px (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    header {
+        font-size: 2em;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; 
+    }
+
+    .content {
+        width: 60%; 
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
